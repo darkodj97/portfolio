@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Darko</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closedmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Darko</span><br>Djurdjev from Novi Sad</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/darko.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>HI! I am Darko, 25-year-old self-taught Front-End Developer from Novi Sad. I am a hard working guy with disciplined approach to work and good communication skills.  In my spare time i like to fly my drone and make nature videos!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>DOM Manipulation</span></li>
+                            <li><span>Bootstrap 5</span></li>
+                            <li><span>Java basics</span></li>
+                            <li><span>Selenium basics</span></li>
+                            <li><span>QA Testing</span></li>
+                            <li><span>GIT + GITHUB</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li><span>I have created multiple websites:</span></li>
+                            <li>-that are fully responsive</li>
+                            <li>-that use multiple APIs</li>
+                            <li>-with dark/light mode</li>
+                            <li>-a music player</li>
+                            <li>-a joke telling app</li>
+                            <li>-this website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="education">
+                        <ul>
+                            <li><span>"Zrenjaninska Gimnazija"</span><br>Social studies</li>
+                            <li><span>"FTN Informatika"</span><br>Programming basics</li>
+                            <li>Android App Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Business Website</h3>
+                        <p>Fully responsive business website with custom video player and pricing section created with Swiper JS</p>
+                    <a href="https://darkodj97.github.io/business-website/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Dark-Light Theme Website</h3>
+                        <p>Website that has a nice transition between dark and light modes</p>
+                    <a href="https://darkodj97.github.io/light-dark-mode/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Joke Telling Camel</h3>
+                        <p>Website that uses text to speech API and joke API to make you laugh!</p>
+                    <a href="https://darkodj97.github.io/joke-telling-camel/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Music player that plays RHCP<br>(Peppers rock!)</p>
+                    <a href="https://darkodj97.github.io/music-player/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> djudjevdarko1997@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +381 65 869 16 62</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/darkodj97"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/darko-djurdjev/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/darkodj97/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/CV DARKO.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Created by Darko Djurdjev.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
